@@ -6,16 +6,33 @@
   </head>
   <body>
     <div>
-      <div>
-        <!--Insert context bar/menu-->
-      </div>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#news">About</a>
+            <div class="dropdown">
+              <button class="dropbtn">Menu 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div> 
+          </div>
     </div>
     <div>
       <div><!--Insert image here--></div>
     </div>
     <div>
       Select a CST term to view courses:
-      <!--Insert drop down menu-->
+      <select>
+        <option value="volvo">Select a term</option>
+        <option value="volvo">Term 1</option>
+        <option value="saab">Term 2</option>
+        <option value="opel">Term 3</option>
+        <option value="audi">Term 4</option>
+      </select>
     </div>
   </body>
 </html>

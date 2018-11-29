@@ -1,19 +1,20 @@
-let someData = "<ul><li>Monday</li><li>Tuesday</li><li>Wednesday</li><li>Thursday</li><li>Friday</li><li>Saturday</li><li>Sunday</li></ul>";
+let htmldata = "<ul><li>Ariana Grande</li><li>Travis Scott</li><li>Marshmello & Bastille</li><li>Halsey</li><liJuice WRLD</li><li>Panic! At The Disco</li><li>Maroon 5 (Feat. Cardi B)</li><li>Kodak Black (Feat. Travis Scott & Offset)</li><li>Lil Baby & Gunna</li><li>Post Malone</li></ul>";
 
-let jsondata1 = ["Artist: Ariana Grande"]
-let jsondata2 = ["Artist: Travis Scott"]
+let jsondata = ["Thank U, Next", "Sicko Mode", "Happier", "Without Me", "Lucid Dreams", "High Hopes", "Girls Like You", "Drip Too Hard", "ZEZE", "Better Now"]
+
 
 module.exports = {
-  getHTML: function () {
-      console.log("called: getHTML");
-      // Note: this could be from a DB, for now it's just hard-coded
-      return someData;
-  },
-  getJSON: function () {
-      console.log("called: getJSON");
-      // Note: this could be from a DB, for now it's just hard-coded
-          return jsondata1;
-  }
+    getHTML: function () {
+        console.log("called: getHTML");
+        // Note: this could be from a DB, for now it's just hard-coded
+        return htmldata;
+    },
+    getJSON: function () {
+        console.log("called: getJSON");
+        // Note: this could be from a DB, for now it's just hard-coded
+        return jsondata;
+    }
+
 }
 
 var someOtherFunction = function () {

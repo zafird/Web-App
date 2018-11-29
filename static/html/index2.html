@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>COMP 1536 Lab 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MUSIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Genre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Songs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Artists</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-3">Music is my Life</h1>
+        <p class="lead">Without music, life would be a mistake.</p>
+        <hr class="my-4">
+        <p>Find out more how music can change your life.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#1</div>
+                <div class="card-body">
+                    <h4 class="card-title">Thank U, Next</h4>
+                    <a id="learnmore1" class="btn btn-primary btn-sm getJSONList" href="" role="button">Learn more</a>
+                    <!-- <p class="card-text">Ariana Grande</p> -->
+                    <div class="content"></div>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#2</div>
+                <div class="card-body">
+                    <h4 class="card-title">Sicko Mode</h4>
+                    <a id="learnmore2" class="btn btn-primary btn-sm getJSONList" href="" role="button">Learn more</a>
+                    <!-- <p class="card-text">Travis Scott</p> -->
+                    <div class="content"></div>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#3</div>
+                <div class="card-body">
+                    <h4 class="card-title">Happier</h4>
+                    <a class="btn btn-primary btn-sm" href="" role="button">Learn more</a>
+                    <!-- <p class="card-text">Marshmello & Bastille</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#4</div>
+                <div class="card-body">
+                    <h4 class="card-title">Without Me</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Halsey</p> -->
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#5</div>
+                <div class="card-body">
+                    <h4 class="card-title">Lucid Dreams</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Juice WRLD</p> -->
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#6</div>
+                <div class="card-body">
+                    <h4 class="card-title">High Hopes</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Panic! At The Disco</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#7</div>
+                <div class="card-body">
+                    <h4 class="card-title">Girls Like You</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Maroon 5 (Feat. Cardi B)</p> -->
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#8</div>
+                <div class="card-body">
+                    <h4 class="card-title">Thank U, Next</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Ariana Grande</p> -->
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#9</div>
+                <div class="card-body">
+                    <h4 class="card-title">Drip Too Hard</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Lil Baby & Gunna</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#10</div>
+                <div class="card-body">
+                    <h4 class="card-title">ZEZE</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Kodak Black (Feat. Travis Scott & Offset)</p> -->
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#11</div>
+                <div class="card-body">
+                    <h4 class="card-title">Better Now</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Post Malone</p> -->
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#12</div>
+                <div class="card-body">
+                    <h4 class="card-title">Youngblood</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">5 Seconds Of Summer</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#13</div>
+                <div class="card-body">
+                    <h4 class="card-title">Breathin</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Ariana Grande</p> -->
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#14</div>
+                <div class="card-body">
+                    <h4 class="card-title">Wake Up In The Sky</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Gucci Mane X Bruno Mars X Kodak Black</p> -->
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col-md-4" style="max-width: 20rem;">
+                <div class="card-header">#15</div>
+                <div class="card-body">
+                    <h4 class="card-title">Trip</h4>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a>
+                    <!-- <p class="card-text">Ella Mai</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/client2.js"></script>
+</body>
+
+</html>

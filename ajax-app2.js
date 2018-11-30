@@ -47,11 +47,82 @@ app.get('/ajax-GET-list', function (req, res) {
         res.setHeader('Content-Type', 'text/html');
         dataList = lists.getHTML();
         res.send(dataList);
+    } else if(formatOfResponse == 'html-list2') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getHTML2();
+        res.send(dataList);
+    } else if(formatOfResponse == 'html-list3') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getHTML3();
+        res.send(dataList);
+    } else if(formatOfResponse == 'html-list4') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getHTML4();
+        res.send(dataList);
+    } else if(formatOfResponse == 'html-list5') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getHTML5();
+        res.send(dataList);
+    } else if(formatOfResponse == 'html-list6') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getHTML6();
+        res.send(dataList);
+    } else if(formatOfResponse == 'html-list7') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getHTML7();
+        res.send(dataList);
+    } else if(formatOfResponse == 'html-list8') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getHTML8();
+        res.send(dataList);
+    } else if(formatOfResponse == 'html-list9') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getHTML9();
+        res.send(dataList);
+    } else if(formatOfResponse == 'html-list10') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getHTML10();
+        res.send(dataList);
 
     } else if(formatOfResponse == 'json-list') {
-
         res.setHeader('Content-Type', 'application/json');
         dataList = lists.getJSON();
+        res.send(dataList);
+    } else if(formatOfResponse == 'json-list2') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON2();
+        res.send(dataList);
+    } else if(formatOfResponse == 'json-list3') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON3();
+        res.send(dataList);
+    } else if(formatOfResponse == 'json-list4') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON4();
+        res.send(dataList);
+    } else if(formatOfResponse == 'json-list5') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON5();
+        res.send(dataList);
+    } else if(formatOfResponse == 'json-list6') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON6();
+        res.send(dataList);
+    } else if(formatOfResponse == 'json-list7') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON7();
+        res.send(dataList);
+    } else if(formatOfResponse == 'json-list8') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON8();
+        res.send(dataList);
+    } else if(formatOfResponse == 'json-list9') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON9();
+        res.send(dataList);
+    } else if(formatOfResponse == 'json-list10') {
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON10();
         res.send(dataList);
 
     } else {
